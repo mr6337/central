@@ -87,6 +87,34 @@ justify-content: center;
 
 }
 
+
+.headern {
+    display: flex;
+    justify-content: center;    /* Center the text horizontally */
+    align-items: center;        /* Center items vertically */
+    height: 70px;              /* Set the height of the div */
+    background-color: rgb(9, 83, 115);  /* Light gray background */
+    padding: 10px;
+    position: relative;         /* For absolute positioning of the image */
+    border-radius: 15px;
+}
+
+/* Position the image in the left corner */
+.headern img {
+    position: absolute;
+    left: 10px;                 /* Position the image 10px from the left */
+    top: 50%;                   /* Vertically center the image */
+    transform: translateY(-50%); /* Adjust for image height */
+    height: 80px;               /* Set the image height */
+}
+
+/* Style for the centered text */
+.headern h1 {
+    font-size: 35px;
+    margin: 0;
+    color: rgb(30, 190, 171);
+}
+
 .searchbox {
     width:400px;
     display: flex;
