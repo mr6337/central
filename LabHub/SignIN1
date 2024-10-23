@@ -19,12 +19,20 @@
             <a href="signIn.html"><button class=signinbutton1><input type="submit" value="Sign In"></button></a>
         </form>
     </div>
-    <a href="file:///C:/Users/user/Downloads/centralapp/central/LabHub/signIn.html">
-        <button class="your-button-class">Click Me</button>
+<a href="signIn.html">
+        <button class="your-button-class"></button>
     </a>
-    <a href="Homepage.html">
-        <button class="signinbutton1" type="submit">Sign In</button>
+    <a href="">
+        <button class="signinbutton1" type="submit"></button> </a>
+    </div>
+</div>
+    <a href="Biology.html">
+        <button class="your-button-class"></button>
     </a>
+</body>
+</html>
+    </div>
 </form>
 </body>
 </html>
+
