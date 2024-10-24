@@ -11,7 +11,7 @@ body {
 background-color: rgb(154, 211, 205);
 }
 
-    .header {
+.header {
     display: flex;
     padding-left: 5px;
     flex-direction: row;
@@ -19,6 +19,22 @@ background-color: rgb(154, 211, 205);
     background-color: rgb(9, 83, 115);
     margin: 0px;
     border-radius: 15px;
+}
+
+.labhub-button{
+    background-color: transparent; 
+    color: inherit;
+    border: none;
+    font-size: 35px;
+    color: rgb(30, 190, 171);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    padding: 5px 10px;
+   
+}
+
+.labhub-button:hover{
+    opacity: 0.7;
 }
 
 .labhublogo {
@@ -356,7 +372,14 @@ input[type="text"] {
         <body>
 
             <div class="header">
-                <div class="labhublogo"><image class="thelogo" src="logo.png"></image><strong>LabHub </strong> Central Piedmont Community College </div>
+                <div class="labhublogo">
+                    <a href="Homepage.html">
+                        <button class="labhub-button">
+                            <strong>LabHub</strong>
+                        </button>
+                    </a> 
+                                Central Piedmont Community College 
+                            </div>
                 <div class="signin"><button class="signinbutton">Sign In</button></div>
                 <div class="searchbox">
                     <span class="search-icon material-symbols-outlined">               search                </span>
@@ -367,18 +390,33 @@ input[type="text"] {
                 <div class="toprow">
                     <div class="backdrop">
                     <p class="backdropheader">Biology Forums</p>
-                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=labicon.png></image>Labs</div></button>
-                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=projecticon.png></image>Student Projects</div></button>
-                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=eventicon.png></image>Events</div></button>
-                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=workicon.png></image>Internships</div></button>
-                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=studyicon.png></image>Study Group</div></button>
-                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=othericon.png></image>Other / General</div></button>
+                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/labicon.png></image>Labs</div></button>
+                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/projecticon.png></image>Student Projects</div></button>
+                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/eventicon.png></image>Events</div></button>
+                   
+                   <!--Button leading from Internships to internships.html-->
+                    <a href="Internships.html">
+                        <button class="forumbutton">
+                          <div class="forumbuttonobject">
+                            <img class="forumbuttonicon" src="pictures/workicon.png" alt="icon" />Internships</div>
+                        </button>
+                      </a>
+                    
+                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/studyicon.png></image>Study Group</div></button>
+                
+                    <!--Button leading from Other/General to forums-->
+                    <a href="home.html">
+                        <button class="forumbutton">
+                          <div class="forumbuttonobject">
+                            <img class="forumbuttonicon" src="pictures/othericon.png" alt="icon" />Other / General</div>
+                        </button>
+                      </a>
             </div>
                     <div class="scrollbox">
                         <div class= scrollheader>Most Recent Biology Threads</div>
                         <div class="scrolldiv">
                             <div class=scrollobject>
-                           <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
+                           <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="pictures/orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
                                 
                             <div class="container">
                                     <div id="commentsSection" class="comments-section"></div>
@@ -394,7 +432,7 @@ input[type="text"] {
 </p></div></button>
 
 <div class=scrollobject>
-    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
+    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="pictures/orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
          
      <div class="container">
              <div id="commentsSection" class="comments-section"></div>
@@ -408,7 +446,7 @@ input[type="text"] {
 </p></div></button>
 
 <div class=scrollobject>
-    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
+    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="pictures/orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
          
      <div class="container">
              <div id="commentsSection" class="comments-section"></div>
@@ -422,7 +460,7 @@ input[type="text"] {
 </p></div></button>
 
 <div class=scrollobject>
-    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
+    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="pictures/orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
          
      <div class="container">
              <div id="commentsSection" class="comments-section"></div>
@@ -436,7 +474,7 @@ input[type="text"] {
 </p></div></button>
 
 <div class=scrollobject>
-    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
+    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="pictures/orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
          
      <div class="container">
              <div id="commentsSection" class="comments-section"></div>
@@ -454,9 +492,9 @@ input[type="text"] {
                         <div class="menuheader">
                         <p><strong>My Stuff</p></strong></div>
                         <div class="menubuttondiv">
-                            <a style=text-decoration:none href="file:///C:/Users/norah/Desktop/LabHub/saved_for_later.html"><button class="menubutton"><image class="menuicon" src=bookmarkicon.png></image>Bookmarked</button></a>
-                            <button class="menubutton"><image class="menuicon" src=usericon.png></image>My Profile</button>
-                            <button class="menubutton"><image class="menuicon" src=mailboxicon.png></image>Messages</button>
+                            <a style=text-decoration:none href="saved_for_later.html"><button class="menubutton"><image class="menuicon" src=pictures/bookmarkicon.png></image>Bookmarked</button></a>
+                            <button class="menubutton"><image class="menuicon" src=pictures/usericon.png></image>My Profile</button>
+                            <button class="menubutton"><image class="menuicon" src=pictures/mailboxicon.png></image>Messages</button>
                         </div>
                     </div>
                     </div>
