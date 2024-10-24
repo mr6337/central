@@ -1,0 +1,50 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .signinbutton1, .createaccountbutton {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+    
+        .signinbutton1:hover, .createaccountbutton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="signin-container">
+        <h2>Sign In</h2>
+        <form action="" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button class="signinbutton1" type="submit">Sign In</button>
+        </form>
+
+        <a href="file:///C:/Users/user/Downloads/centralapp/central/LabHub/createaccount.html">
+            <button class="createaccountbutton">
+                Create Account
+            </button>
+        </a>
+    </div>
+
+</body>
+</html>
