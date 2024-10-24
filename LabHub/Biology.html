@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="tablogo.png"/>
+        <title>Biology</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+
+        <style>
+
+body {
+background-color: rgb(154, 211, 205);
+}
+
+.header {
+    display: flex;
+    padding-left: 5px;
+    flex-direction: row;
+    height: 70px;
+    background-color: rgb(9, 83, 115);
+    margin: 0px;
+    border-radius: 15px;
+}
+
+.labhub-button{
+    background-color: transparent; 
+    color: inherit;
+    border: none;
+    font-size: 35px;
+    color: rgb(30, 190, 171);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    padding: 5px 10px;
+   
+}
+
+.labhub-button:hover{
+    opacity: 0.7;
+}
+
+.labhublogo {
+    width: 800px;
+    color: rgb(30, 190, 171);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+
+}
+
+.searchbox {
+    width:330px;
+    display: flex;
+    align-items:end;
+    border-radius: 20px;
+    background: rgb(161, 245, 245);
+    transition: .3s;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    padding: 14px;
+    margin-right: 6px;
+}
+
+.searchbox:hover {
+    opacity: 0.7;
+}
+
+.search-input {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(6, 44, 55);
+    cursor: pointer;
+    align-self: center;
+    width:360px;
+}
+
+.signin{
+    width:110px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.signinbutton{
+    border-radius: 20px;
+    border: none;
+    background:rgb(53, 117, 142);
+    padding-top:11px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color:rgb(165, 251, 251);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-wrap: nowrap;
+}
+
+.signinbutton:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.homebutton {
+    width: 80px;
+    height: 80px;
+
+}
+
+.toprow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.backdropheader {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(247, 253, 255);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 11px;
+    margin-bottom: 4px;
+}
+
+.backdrop{
+    background-color: rgb(0, 120, 120);
+    width: 265px;
+    margin-right:60px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    height: 465px;
+    padding-bottom:6px;
+
+}
+
+.scrollbox {
+width: 730px;
+background: rgb(196, 246, 229);
+margin-right: 60px;
+padding-top: 15px;
+border-radius: 15px;
+}
+
+.scrolldiv {
+width: 730px;
+height: 414px;
+margin-top: 7px;
+background: rgb(196, 246, 229);
+overflow: hidden;
+overflow-y: scroll;
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.scrollobject{
+font-size: 15px;
+font-family:Arial, Helvetica, sans-serif;
+color: black;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.scrollheader {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(9, 83, 115);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.thumbnails {
+    margin-left:10px;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(222, 253, 242);
+    color: seagreen;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 15px;
+}
+
+.forumbutton {
+    width: 250px;
+    height: 62px;
+    border-radius: 15px;
+    background-color:rgb(160, 227, 219) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border:none;
+    margin:none;
+    opacity: .9;
+    transition: .3s;
+}
+
+.forumbutton:hover {
+    opacity: .7;
+    cursor: pointer
+}
+
+.forumbuttonicon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.forumbuttonobject {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(3, 118, 120);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    align-self: center;
+    width: 128px;
+    height: 390px;
+    background-color: rgb(30, 190, 171);
+    border-radius: 20px;
+}
+
+.menuheader {
+    margin-bottom:10px;
+    color: rgb(247, 250, 251);
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menubuttondiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menubutton {
+    width: 100px;
+    height: 100px;
+    color: rgb(3, 118, 120);
+    background-color: rgb(220, 218, 218);
+    border-radius: 15px;
+    justify-content: space-evenly;
+    border: none;
+    transition: .3s;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menubutton:hover {
+    opacity: .9;
+    cursor:pointer;
+}
+
+.menuicon {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.person {
+    width:60px;
+    height: 60px;
+}
+
+.persondiv {
+    font-size: 12px;
+    text-align: center;
+    margin-right:10px;
+    margin-left: 10px;
+    color: rgb(3, 118, 120);
+}
+
+.thumbnailinfo{
+    margin-right:10px;
+    color: rgb(3, 118, 120);
+    text-align: left;
+    line-height: 19px;
+    font-size: 15px;
+}
+
+.thumbnails:hover{
+    border: solid 2px rgb(120, 184, 169);
+    cursor:pointer;
+}
+
+.container {
+    text-align: center;
+}
+
+.input-container {
+    margin-left:8px;
+    margin-top: 7px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width:300px;
+}
+
+.commentButton {
+    padding: 4px 3px;
+    background-color: rgb(2, 181, 175);
+    font-size: 12px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.commentButton:hover {
+    background-color: #7ba09c;
+    color: white;
+}
+
+.comments-section {
+    margin-top: 20px;
+    margin-left:35px;
+    text-align: left;
+    width: 300px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.saveButton {
+    padding: 4px 3px;
+    background-color: rgb(52, 222, 222);
+    font-size: 12px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.thelogo{
+    width:50px;
+    height:50px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+        </style>
+    </head>
+        <body>
+
+            <div class="header">
+                <div class="labhublogo">
+                    <a href="Homepage.html">
+                        <button class="labhub-button">
+                            <strong>LabHub</strong>
+                        </button>
+                    </a> 
+                                Central Piedmont Community College 
+                            </div>
+                <div class="signin"><button class="signinbutton">Sign In</button></div>
+                <div class="searchbox">
+                    <span class="search-icon material-symbols-outlined">               search                </span>
+                    <input class="search-input" type="search" placeholder="Search">
+                </div>
+                </div>
+               
+                <div class="toprow">
+                    <div class="backdrop">
+                    <p class="backdropheader">Biology Forums</p>
+                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/labicon.png></image>Labs</div></button>
+                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/projecticon.png></image>Student Projects</div></button>
+                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/eventicon.png></image>Events</div></button>
+                   
+                   <!--Button leading from Internships to internships.html-->
+                    <a href="Internships.html">
+                        <button class="forumbutton">
+                          <div class="forumbuttonobject">
+                            <img class="forumbuttonicon" src="pictures/workicon.png" alt="icon" />Internships</div>
+                        </button>
+                      </a>
+                    
+                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/studyicon.png></image>Study Group</div></button>
+                
+                    <!--Button leading from Other/General to forums-->
+                    <a href="home.html">
+                        <button class="forumbutton">
+                          <div class="forumbuttonobject">
+                            <img class="forumbuttonicon" src="pictures/othericon.png" alt="icon" />Other / General</div>
+                        </button>
+                      </a>
+            </div>
+                    <div class="scrollbox">
+                        <div class= scrollheader>Most Recent Biology Threads</div>
+                        <div class="scrolldiv">
+                            <div class=scrollobject>
+                           <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="pictures/orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
+                                
+                            <div class="container">
+                                    <div id="commentsSection" class="comments-section"></div>
+                                    <button class="commentButton" id="commentButton" onclick="showTextbox()">Comment</button>
+                                    <button class="saveButton">Save</button>
+                                    <div id="inputContainer" class="input-container" style="display: none;">
+                                        <input type="text" id="commentInput" placeholder="Type your comment here" />
+                                        <button class="commentButton" id="submitButton" onclick="submitComment()">Submit</button>
+                                        </div>
+
+                                        
+                                <script src="script.js"></script>
+</p></div></button>
+
+<div class=scrollobject>
+    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="pictures/orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
+         
+     <div class="container">
+             <div id="commentsSection" class="comments-section"></div>
+             <button class="commentButton" id="commentButton" onclick="showTextbox()">Comment</button>
+             <button class="saveButton">Save</button>
+             <div id="inputContainer" class="input-container" style="display: none;">
+                 <input type="text" id="commentInput" placeholder="Type your comment here" />
+                 <button class="commentButton" id="submitButton" onclick="submitComment()">Submit</button>
+                 </div>
+
+</p></div></button>
+
+<div class=scrollobject>
+    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="pictures/orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
+         
+     <div class="container">
+             <div id="commentsSection" class="comments-section"></div>
+             <button class="commentButton" id="commentButton" onclick="showTextbox()">Comment</button>
+             <button class="saveButton">Save</button>
+             <div id="inputContainer" class="input-container" style="display: none;">
+                 <input type="text" id="commentInput" placeholder="Type your comment here" />
+                 <button class="commentButton" id="submitButton" onclick="submitComment()">Submit</button>
+                 </div>
+
+</p></div></button>
+
+<div class=scrollobject>
+    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="pictures/orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
+         
+     <div class="container">
+             <div id="commentsSection" class="comments-section"></div>
+             <button class="commentButton" id="commentButton" onclick="showTextbox()">Comment</button>
+             <button class="saveButton">Save</button>
+             <div id="inputContainer" class="input-container" style="display: none;">
+                 <input type="text" id="commentInput" placeholder="Type your comment here" />
+                 <button class="commentButton" id="submitButton" onclick="submitComment()">Submit</button>
+                 </div>
+
+</p></div></button>
+
+<div class=scrollobject>
+    <button class="thumbnails" id="contentBox"><div class="content" id=div1><div class=persondiv><image class="person" src="pictures/orbicon.png">Professor Brown</image></div><div class="thumbnailinfo"><p><strong>Biology Lab</strong></p><p><strong>Posted</strong> 12:36 08/27</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat dolore ipsa, inventore numquam doloremque enim obcaecati molestias beatae. Numquam saepe nihil totam quisquam debitis, omnis ullam fugiat voluptas at.<br>
+         
+     <div class="container">
+             <div id="commentsSection" class="comments-section"></div>
+             <button class="commentButton" id="commentButton" onclick="showTextbox()">Comment</button>
+             <button class="saveButton">Save</button>
+             <div id="inputContainer" class="input-container" style="display: none;">
+                 <input type="text" id="commentInput" placeholder="Type your comment here" />
+                 <button class="commentButton" id="submitButton" onclick="submitComment()">Submit</button>
+                 </div>
+</p></div></button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu">
+                        <div class="menuheader">
+                        <p><strong>My Stuff</p></strong></div>
+                        <div class="menubuttondiv">
+                            <a style=text-decoration:none href="saved_for_later.html"><button class="menubutton"><image class="menuicon" src=pictures/bookmarkicon.png></image>Bookmarked</button></a>
+                            <button class="menubutton"><image class="menuicon" src=pictures/usericon.png></image>My Profile</button>
+                            <button class="menubutton"><image class="menuicon" src=pictures/mailboxicon.png></image>Messages</button>
+                        </div>
+                    </div>
+                    </div>
+
+        </body>
+</html>
