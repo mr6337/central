@@ -44,7 +44,6 @@ body {
     position: relative;
 }
 
-
 .banner {
     background-color: #f0f0f0;
     height: 130px;
@@ -113,7 +112,7 @@ body {
 .post-its {
     flex: 1;
     padding: 0px;
-background-image: url(corkboard2.jpg);
+    background-image: url(corkboard2.jpg);
     border-radius: 15px;
     border: solid 7px rgb(168, 131, 84);
     text-align: center;
@@ -142,13 +141,3 @@ background-image: url(corkboard2.jpg);
     height: 120px;
     width: 120px;
 }
-
-
-
-
-
-
-
-
-
-

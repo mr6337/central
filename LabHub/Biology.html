@@ -8,7 +8,7 @@
         <style>
 
 body {
-background-color: rgb(154, 211, 205);
+    background-color: rgb(154, 211, 205);
 }
 
 .header {
@@ -390,7 +390,14 @@ input[type="text"] {
                 <div class="toprow">
                     <div class="backdrop">
                     <p class="backdropheader">Biology Forums</p>
-                    <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/labicon.png></image>Labs</div></button>
+                    <!--Button leading from Labs to labsforum.html-->
+                    <a href="labsforum.html">
+                        <button class="forumbutton">
+                          <div class="forumbuttonobject">
+                            <img class="forumbuttonicon" src="pictures/labicon.png" alt="icon" />Labs</div>
+                        </button>
+                      </a>
+                    
                     <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/projecticon.png></image>Student Projects</div></button>
                     <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/eventicon.png></image>Events</div></button>
                    

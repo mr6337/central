@@ -193,13 +193,13 @@ background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 25
 }
 
 .nav-item a{
-        float: right;
-        display: block;
-        text-align: center;
-        margin-inline: 20px;
-        font-size: 20px;
-        padding: 10px;
-        color: cadetblue;
+    float: right;
+    display: block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color: cadetblue;
 }
 
 .nav-item a:hover{
