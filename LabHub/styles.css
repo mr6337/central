@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(154, 211, 205);
+}
+
+.container {
+    display: flex;
+    height: 530px;
+}
+
+.saveNotesButton {
+    background-color: rgb(215, 183, 109);
+    padding:6px;
+    border-radius: 15px;
+    color: rgb(114, 73, 2);
+    border: none;
+}
+
+.postitheader{
+    text-align: center;
+    color: lightgoldenrodyellow;
+}
+
+.editprofile {
+    background-color: rgb(20, 130, 130);
+    padding:7px;
+    Color: white;
+    border-radius: 15px;
+    border: none;
+    margin-left: 40px;
+}
+
+.submit {
+    background-color: aquamarine;
+}
+
+.me {
+    flex: 2;
+    padding-left: none;
+    padding-right: 15px;
+    border-right: 1px solid #ccc;
+    position: relative;
+}
+
+.banner {
+    background-color: #f0f0f0;
+    height: 130px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: none;
+    border: 2px solid rgb(42, 159, 163);
+}
+
+.profile-picture {
+    width: 130px;
+    height: 130px;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(42, 159, 163);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+
+.about {
+    margin-top: 100px; /* Adjust based on profile picture */
+    margin-left: 35px;
+
+}
+
+.aboutheader{
+    margin-bottom:0px;
+    margin-left:0px;
+}
+
+.nameheader{
+    margin:5px;
+}
+
+.bioheader{
+    margin:5px;
+}
+
+.usertypeheader{
+    margin:5px;
+}
+
+.disciplineheader{
+    margin:5px;
+}
+
+.bio{
+    margin-top:7px;
+    margin-bottom:15px;
+    margin-left:7px;
+}
+
+.discipline{
+    margin:7px;
+}
+
+.role{
+    margin:7px;
+}
+
+.post-its {
+    flex: 1;
+    padding: 0px;
+    background-image: url(corkboard2.jpg);
+    border-radius: 15px;
+    border: solid 7px rgb(168, 131, 84);
+    text-align: center;
+}
+
+.postit {
+    margin-top:12px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 380px;
+    gap: 8px;
+    justify-content:space-evenly;
+    margin-left: 11px;
+    
+}
+
+.note {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(248, 222, 138);
+    height: 120px;
+    width: 120px;
+}
