@@ -27,12 +27,76 @@
     
     <!-- Optional: External fonts or other resources -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!--- Linking the internship CSS that holds the different intern opprotunities -->
+    <link rel="stylesheet" href="intern.css">
+
+    <!--- Linking the javascript file to the file -->
+    <script src="intern.js" defer></script> 
+    
     
 </head>
 <body>
     <div class="headern">
         <img src="pictures/logo.png" alt="LabHub logo">
         <h1>Internship Opportunities</h1>
+    </div>
+
+      <div class="toprow">
+        <div class="backdrop">
+        <!--Button leading from Labs to labsforum.html-->
+        <a href="labsforum.html">
+            <button class="forumbutton">
+              <div class="forumbuttonobject">
+                <img class="forumbuttonicon" src="pictures/labicon.png" alt="icon" />Labs</div>
+            </button>
+          </a>
+        
+        <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/projecticon.png></image>Student Projects</div></button>
+        <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/eventicon.png></image>Events</div></button>
+       
+       <!--Button leading from Internships to internships.html-->
+        <a href="Internships.html">
+            <button class="forumbutton">
+              <div class="forumbuttonobject">
+                <img class="forumbuttonicon" src="pictures/workicon.png" alt="icon" />Internships</div>
+            </button>
+          </a>
+        
+        <button class="forumbutton"><div class=forumbuttonobject><image class="forumbuttonicon" src=pictures/studyicon.png></image>Study Group</div></button>
+    
+        <!--Button leading from Other/General to forums-->
+        <a href="home.html">
+            <button class="forumbutton">
+              <div class="forumbuttonobject">
+                <img class="forumbuttonicon" src="pictures/othericon.png" alt="icon" />Other / General</div>
+            </button>
+          </a>
+</div>
+
+<div class="scrollbox">
+  <div class= scrollheader>Science Internships</div>
+  <div class="scrolldiv">
+      <div class=scrollobject>
+     <div class="thumbnails">
+          <button class= thumbnailbutton><img class="image1" src="pictures/labpic1.jpg"><p><strong>Fall 2025 - Undergraduate MicroBiology Internship</strong><br>National Science Association<br>Charlotte, NC- Hybrid work<br>35 - $43 an hour - Seasonal, Internship</p></button>
+          <button class= thumbnailbutton><img class="image1" src="pictures/codepic2.jpg"><p><strong>SPRING 2026-Undergraduate BioMedical Internship (On Site)</strong><br>Science Institution for Biomedical Innovation<br> Charlotte, NC- In Person<br> $6,000 a week - Seasonal, Internship</p></button>
+          <button class= thumbnailbutton><img class="image1" src="pictures/spacepic.jpg"><p><strong>SUMMER 2025- Research Intern</strong><br>Research Institution Of STEM<br> Raleigh NC-Hybrid work<br>$6,550 - $13,920 a month - Internship</p></button>
+          <button class= thumbnailbutton><img class="image1" src="pictures/mechEpic.jpg"><p><strong>FALL - Clinical Research Internship</strong><br>Clinical Institution Of Medical Pathways<br>Charlotte, NC- In Person (Full Time)<br>$320 - $900 a day - Internship</p></button>
+      </div>
+      </div>
+  </div>
+</div>
+
+      <div class="menu">
+        <div class="menuheader">
+        <p><strong>My Stuff</p></strong></div>
+        <div class="menubuttondiv">
+            <a style=text-decoration:none href="saved_for_later.html"><button class="menubutton"><image class="menuicon" src=pictures/bookmarkicon.png></image>Bookmarks</button></a>
+            <a style=text-decoration:none href="myprofile.html"><button class="menubutton"><image class="menuicon" src=pictures/usericon.png></image>My Profile</button></a>
+            <button class="menubutton"><image class="menuicon" src=pictures/mailboxicon.png></image>Messages</button>
+        </div>
+      </div>
     </div>
 
 </body>
