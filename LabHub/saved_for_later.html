@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Saved Content</h1>
+    <div id="savedContents"></div>
+
+    <script>
+        // Retrieve saved content from local storage
+        const savedContents = JSON.parse(localStorage.getItem('savedContents')) || [];
+        
+        const savedDiv = document.getElementById('savedContents');
+
+        // Append each saved content as a new div
+        savedContents.forEach(content => {
+            const div = document.createElement('div');
+            div.className = 'content';
+            div.innerHTML = content;
+            savedDiv.appendChild(div);
+        });
+    </script>
+</body>
+</html>
+
+
+

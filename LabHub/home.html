@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyForum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <!--The image for the left side of the dicussion goes below-->
+    <link rel="stylesheet" href="fa fa-flask">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <ul class="nav-list">
+                    <span class="close-icon" onclick="showIconBar()"><i class="fa fa-times"></i></span>
+                    <li class="nav-item">
+                        <a href="posts.html">Posts</a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="detail.html">Detail</a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="home.html">Home</a>
+                     </li>
+                </ul>
+            </nav>
+            <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+
+<!-- labhub header at the top of pages -->
+<div class="header">
+    <div class="labhublogo">
+        <a href="Homepage.html">
+            <button class="labhub-button">
+                <strong>LabHub</strong>
+            </button>
+        </a> 
+                    Central Piedmont Community College 
+                </div>
+                <div class="signin">
+                        <button class="signinbutton">Sign In</button>
+            </div>
+                <div class="searchbox">
+                    <span class="search-icon material-symbols-outlined"></span>
+                    <input class="search-input" type="search" placeholder="Search">
+                </div>
+                </div>
+    
+        </div>
+    </header>
+    <div class="container">
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>General Information</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                         <!--The image for the left side of the dicussion goes below-->
+                    <i class="fa fa-glasses"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h1><a href="">Struggling to keep up with your coursework? Here are some effective study techniques:</a></h1>
+                    <p> <li>Pomodoro Technique: Study for 25 minutes, then take a 5-minute break. Repeat!</li>
+                        <li>Mind Mapping: Visualize concepts by creating mind maps to connect ideas.</li>
+                        <li>Group Study: Collaborate with classmates to discuss and clarify difficult topics.</li>
+                        <li>Practice Tests: Use past exams to test your knowledge and improve retention.</li></p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 posts | 15 topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last Post</a></b> by <a href="">StudyGuru</a>
+                    <br>
+                    on <small>22 Dec 2024</small>
+                </div>
+            </div>
+        <!--More Rows-->
+        <hr class="subforum-divider">
+        <div class="subforum-row">
+            <div class="subforum-icon subforum-column center">
+                     <!--The image for the left side of the dicussion goes below-->
+                <i class="fa fa-book"></i>
+            </div>
+            <div class="subforum-description subforum-column">
+                <h1><a href="">Balancing classes, assignments, and personal life can be tricky. Here are some time management tips:</a></h1>
+                <p><li>Create a Schedule: Use a planner or digital calendar to map out your week.</li>
+                    <li>Prioritize Tasks: Identify your most urgent tasks and tackle them first.</li>
+                    <li>Set Deadlines: Break larger projects into smaller tasks with deadlines to stay on track.</li>
+                    <li>Limit Distractions: Find a quiet space to study and turn off social media notifications.</li></p>
+            </div>
+            <div class="subforum-stats subforum-column center">
+                <span>24 posts | 15 topics</span>
+            </div>
+            <div class="subforum-info subforum-column">
+                <b><a href="">Last Post</a></b> by <a href="">OrganizedStudent</a>
+                <br>
+                on <small>22 Dec 2024</small>
+            </div>
+        </div>
+        <!--More Rows-->
+        <hr class="subforum-divider">
+        <div class="subforum-row">
+            <div class="subforum-icon subforum-column center">
+                     <!--The image for the left side of the dicussion goes below-->
+                <i class="fa fa-suitcase"></i>
+            </div>
+            <div class="subforum-description subforum-column">
+                <h1><a href="">Making the Most of Internships</a></h1>
+                <p><li>Set Goals: Define what you want to learn or achieve during your internship to stay focused.</li>
+                    <li>Network with Colleagues: Take the initiative to connect with professionals in your field—every relationship counts!</li>
+                    <li>Ask Questions: Don’t hesitate to seek clarification or advice; it shows your eagerness to learn.</li>
+                    <li>Seek Feedback: Regularly ask for feedback from your supervisor to improve and grow in your role.</li></p>
+            </div>
+            <div class="subforum-stats subforum-column center">
+                <span>24 posts | 15 topics</span>
+            </div>
+            <div class="subforum-info subforum-column">
+                <b><a href="">Last Post</a></b> by <a href="">FutureProfessional</a>
+                <br>
+                on <small>22 Dec 2024</small>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+<!--Forum info-->
+<div class="forum-info">
+    <div class="chart">
+        My Forum - Stats &nbsp; <i class="fa fa-bar-chart"></i>
+    </div>
+    <div>
+        <span><u>5,120</u> Posts in <u>1204</u> Topics by <u>54,023</u> Users</span><br>
+        <span>Latest Post: <b><a href="#">Random Post</a></b> on 15 Dec 2024</span>
+    </div>
+
+
+    <footer>
+        <span>&copy; &nbsp;LabHub | All rights reserved. </span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

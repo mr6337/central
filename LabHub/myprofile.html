@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Profile</title>
+    <link rel="icon" type="image/x-icon" href="Pictures/tablogo.png"/>
+</head>
+<body>
+    <div class="container">
+        <div class="me">
+            <div class="banner" id="banner" onclick="uploadBanner()">
+                <input type="file" id="bannerInput" accept="image/*" style="display:none;" onchange="loadBanner(event)">
+            </div>
+            <div class="profile-picture" id="profilePicture" onclick="uploadProfilePicture()">
+                <input type="file" id="profileInput" accept="image/*" style="display:none;" onchange="loadProfilePicture(event)">
+            </div>
+            <div class="about">
+                <h3 class="aboutheader" style="color: rgb(32, 84, 69);">About</h3>
+                <h3 id="nameHeader" style="color: rgb(255, 255, 255);" class=nameheader></h3>
+                <input type="text" id="nameInput" placeholder="Your Name" style="display:none;">
+                <button class=submit id="yesButton" style="display:none;" onclick="setName()">Submit</button>
+                <h4 class="disciplineheader" style="color: rgb(31, 84, 69);">Discipline</h4>
+                <div id="disciplineSection" style="display:none;">
+                    <select id="disciplineSelect">
+                        <option value="">Choose Discipline</option>
+                        <option>Aerospace Engineering</option>
+                        <option>Biology</option>
+                        <option>Chemistry</option>
+                        <option>Civil Engineering</option>
+                        <option>Chemical Engineering</option>
+                        <option>Computer Engineering</option>
+                        <option>Computer Science</option>
+                        <option>Data Science</option>
+                        <option>Mathematics</option>
+                        <option>Mechanical Engineering</option>
+                        <option>Physics</option>
+                        <option>Psychology</option>
+                        <option>Statistics</option>
+                    </select>
+                    <button class="submit" onclick="selectDiscipline()">Submit</button>
+                </div>
+                <p class=discipline id="disciplineParagraph" style="color: rgb(255, 255, 255);"></p>
+                <h4 class="usertypeheader" style="color: rgb(33, 88, 72);">User Type</h4>
+                <div id="roleSection" style="display:none;">
+                    <select id="roleSelect">
+                        <option value="">Choose Role</option>
+                        <option>Professor</option>
+                        <option>Undergrad Student</option>
+                        <option>Grad Student</option>
+                        <option>PhD Student</option>
+                    </select>
+                    <button class="submit" onclick="selectRole()">Submit</button>
+                </div>
+                <p class=role id="roleParagraph" style="color: rgb(255, 255, 255);"></p>
+                <h4 class="bioheader" style="color: rgb(34, 91, 75);">Biography</h4>
+                <div id="biographySection" style="display:none;">
+                    <textarea id="biographyInput" placeholder="Write your biography..."></textarea>
+                    <button class="submit" onclick="submitBiography()">Submit</button>
+                </div>
+                <p class=bio id="biographyParagraph" style="color: rgb(255, 255, 255);"></p>
+                <button id="saveButton" style="display:none;" onclick="saveChanges()">Save Changes</button>
+            </div>
+            <button class=editprofile id="editButton" onclick="editProfile()">Edit Profile</button>
+        </div>
+        <div class="post-its">
+            <h2 style="color: rgb(248, 222, 138);">Post Its</h2>
+            <button id="addNoteButton" class=saveNotesButton onclick="addNote()">Add Note</button>
+            <div class=postit id="notesContainer"></div>
+            <button class=saveNotesButton id="saveNotesButton" onclick="saveNotes()">Save Notes</button>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
