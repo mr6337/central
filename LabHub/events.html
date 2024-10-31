@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+        <style>
+
+body {
+    background-color: rgb(154, 211, 205);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    background-color: rgb(9, 83, 115);
+    margin: 0px;
+    border-radius: 15px;
+}
+
+.labhublogo {
+    width: 800px;
+    color: rgb(30, 190, 171);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    margin-left:5px;
+}
+
+.signin{
+    width:110px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.signinbutton{
+    border-radius: 20px;
+    border: none;
+    background:rgb(53, 117, 142);
+    padding-top:11px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color:rgb(165, 251, 251);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.signinbutton:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+
+.searchbox {
+    width:400px;
+    display: flex;
+    align-items:end;
+    border-radius: 20px;
+    background: rgb(161, 245, 245);
+    transition: .3s;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    padding: 14px;
+    margin-right: 6px;
+}
+
+.searchbox:hover {
+    opacity: 0.7;
+}
+
+.search-input {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(6, 44, 55);
+    cursor: pointer;
+    align-self: center;
+    width:360px;
+}
+
+.megabox{
+    display:flex;
+    flex-direction: row;
+    width: 1200px;
+    height:650px;
+}
+
+.bigbox {
+    margin-left:70px;
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.day27-{
+width: 132px;
+height: 100px;
+background-color: rgb(173, 207, 235);
+margin: 4px;
+border-radius: 7px;
+color: rgb(247, 253, 253);
+padding: 3px;
+}
+
+.week {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width:900px;
+}
+
+.calendarheader{
+    font-size: 30px;
+    color: rgb(43, 123, 123);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 13px;
+    margin-top:25px;
+}
+
+
+.menu {
+    align-self: center;
+    width: 128px;
+    height: 390px;
+    background-color: rgb(30, 190, 171);
+    border-radius: 20px;
+    margin-left:25px;
+}
+
+.menuheader {
+    margin-bottom:10px;
+    color: rgb(247, 250, 251);
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menubuttondiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menubutton {
+    width: 100px;
+    height: 100px;
+    color: rgb(3, 118, 120);
+    background-color: rgb(220, 218, 218);
+    border-radius: 15px;
+    justify-content: space-evenly;
+    border: none;
+    transition: .3s;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menubutton:hover {
+    opacity: .9;
+    cursor:pointer;
+}
+
+.menuicon {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="labhublogo"><strong>LabHub </strong> Central Piedmont Community College </div>
+            <div class="signin">
+                    <button class="signinbutton">Sign In</button>
+        </div>
+            <div class="searchbox">
+                <span class="search-icon material-symbols-outlined">               search                </span>
+                <input class="search-input" type="search" placeholder="Search">
+            </div>
+            </div>
+
+            <div class="megabox">
+            <div class="bigbox">
+                <div class="calendarbox">
+                    <div class="calendarheader">November Events Calendar</div>
+                    <div class="week">
+
+                <button class="day27-" id="day27-"><div class="content" id=day27content><p>27<br>
+                                
+                    <div class="eventcontainer">
+                            <div id="eventsSection" class="eventsSection"></div>
+                            <button class="addeventButton" id="addeventButton" onclick="showTextbox()">Add Event</button>
+                            <button class="saveButton">Save</button>
+                            <div id="inputContainer" class="input-container" style="display: none;">
+                                <input type="text" id="eventInput" placeholder="Add your event here" />
+                                <button class="addeventButton" id="submitButton" onclick="submitComment()">Submit Event</button>
+                                </div>
+
+                                
+                        <script src="events.js"></script>
+</p></div></button>
+
+
+
+
+
+
+
+                        <button class="day28-">28</button>
+                        <button class="day29-">29</button>
+                        <button class="day30-">30</button>
+                        <button class="day31-">31</button>
+                        <button class="day1">1</button>
+                        <button class="day2">2</button>
+                    </div>
+                <div class="week">
+                    <button class="day3">3</button>
+                    <button class="day4">4</button>
+                    <button class="day5">5</button>
+                    <button class="day6">6</button>
+                    <button class="day7">7</button>
+                    <button class="day8">8</button>
+                    <button class="day9">9</button>
+                </div>
+                <div class="week">
+                    <button class="day10">10</button>
+                    <button class="day11">11</button>
+                    <button class="day12">12</button>
+                    <button class="day13">13</button>
+                    <button class="day14">14</button>
+                    <button class="day15">15</button>
+                    <button class="day16">16</button>
+                </div>
+                <div class="week">
+                    <button class="day17">17</button>
+                    <button class="day18">18</button>
+                    <button class="day19">19</button>
+                    <button class="day20">20</button>
+                    <button class="day21">21</button>
+                    <button class="day22">22</button>
+                    <button class="day23">23</button>
+                </div>
+                <div class="week">
+                    <button class="day24">24</button>
+                    <button class="day25">25</button>
+                    <button class="day26">26</button>
+                    <button class="day27">27</button>
+                    <button class="day28">28</button>
+                    <button class="day29">1</button>
+                    <button class="day30">2</button>
+
+                   
+                </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menuheader">
+                <p><strong>My Stuff</p></strong></div>
+                <div class="menubuttondiv">
+                    <a style=text-decoration:none href="file:///C:/Users/norah/Desktop/LabHub/saved_for_later.html"><button class="menubutton"><image class="menuicon" src=pictures/bookmarkicon.png></image>Bookmarked</button></a>
+                    <a href=file:///C:/Users/norah/Desktop/LabHub/myprofile.html style="text-decoration: none;"><button class="menubutton"><image class="menuicon" src=pictures/usericon.png></image>My Profile</button></a>
+                    <button class="menubutton"><image class="menuicon" src=pictures/mailboxicon.png></image>Messages</button>
+                </div>
+        </div>
+    </body>
+</html>
